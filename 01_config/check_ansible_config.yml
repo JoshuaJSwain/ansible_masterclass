@@ -1,5 +1,5 @@
 ---
-- hosts: same_host
+- hosts: csr1000v
   # gather_facts: false
   tasks:
     - name: Print ansible Config location

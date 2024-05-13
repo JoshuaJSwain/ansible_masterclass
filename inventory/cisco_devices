@@ -8,7 +8,7 @@ csr ansible_host=sandbox-iosxe-recomm-1.cisco.com ansible_user=developer ansible
 gns_r1 ansible_host=192.168.79.11
 
 [csr_group]
-r3 ansible_host=192.168.0.63
+r3 ansible_host=192.168.1.98
 
 [routers:children]
 vios_group
@@ -18,7 +18,7 @@ csr_group
 ansible_connection=ansible.netcommon.network_cli
 ansible_network_os=cisco.ios.ios
 ansible_user=admin
-ansible_password=admin
+ansible_password=cisco
 ansible_become=true
 ansible_become_method=enable
 ansible_become_password=admin

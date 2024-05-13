@@ -29,6 +29,10 @@ pip install --user ansible-pylibssh
 
 pip install --user ansible-pylibssh
 
+## ecossytem
+
+ansible-pull can pull playbooks from git repo to then run ansible-playbook with them on the inventory
+ansible config file, first env var then current dir file (cannot be world writable - security risk)
 
 ## commands
 
@@ -43,4 +47,7 @@ ansible all -i 192.168.1.98, -c ansible.netcommon.network_cli -u admin -k -m cis
 # can run arbitrary commands also using the command module with args
 ansible all -i 192.168.1.98, -c ansible.netcommon.network_cli -u admin -k -m cisco.ios.ios_command -e ansible_network_os=cisco.ios.ios -a "commands='show ip interface brief'"
 
+
+
 ````
+
