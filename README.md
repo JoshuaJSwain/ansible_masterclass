@@ -51,3 +51,6 @@ ansible all -i 192.168.1.98, -c ansible.netcommon.network_cli -u admin -k -m cis
 
 ````
 
+## inventory
+
+the ansible.cfg can be set to ingore host ssh pub keys host_key_checking=false
